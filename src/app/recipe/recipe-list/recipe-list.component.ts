@@ -10,6 +10,15 @@ export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('Chiles en nogada',
     'platillo poblano por excelencia',
+    'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg'),
+    new Recipe('Chiles en nogada',
+    'platillo poblano por excelencia',
+    'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg'),
+    new Recipe('Chiles en nogada',
+    'platillo poblano por excelencia',
+    'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg'),
+    new Recipe('Chiles en nogada',
+    'platillo poblano por excelencia',
     'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg')
   ];
   constructor() { }
