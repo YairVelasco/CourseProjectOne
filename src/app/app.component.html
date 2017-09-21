@@ -1,9 +1,11 @@
-<app-header></app-header>
+<app-header (recipeClicked)="recipeToggled($event)" (shoppingClicked)="shoppingToggled($event)"></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" *ngIf="recipeClicked" >
       <app-recipe></app-recipe>
-      <app-shopping-list></app-shopping-list>
+    </div>
+    <div class="col-md-12" *ngIf="shoppinglistClicked">
+      <app-shopping-list ></app-shopping-list>
     </div>
   </div>
 </div>

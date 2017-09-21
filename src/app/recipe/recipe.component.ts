@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { Recipe } from './recipe.model';
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html'
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class RecipeComponent {
-
+  finalObject: Recipe;
+  itemDetails(Object: Recipe){
+    this.finalObject = Object;
+    console.log(Object);
+  }
 }
