@@ -28,7 +28,7 @@ export class RecipeListComponent implements OnInit {
   }
   itemDetails(Object: Recipe){
     this.item.emit(Object);
-    console.log(Object);
+    //console.log(Object);
   }
 
 }

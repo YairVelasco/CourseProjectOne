@@ -10,6 +10,6 @@ export class RecipeComponent {
   finalObject: Recipe;
   itemDetails(Object: Recipe){
     this.finalObject = Object;
-    console.log(Object);
+    //console.log(Object);
   }
 }

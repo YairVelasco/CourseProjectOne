@@ -6,11 +6,11 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
-  @Input() recipeDetail: Recipe; 
+  @Input() recipeDetail: Recipe;
   constructor() { }
 
   ngOnInit() {
-    this.recipeDetail = {name: 'chiles en nogada', description: 'Chiles que estan chidos', imagePath: 'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg'};
+    this.recipeDetail = {name: 'Chiles en nogada', description: 'Platillo poblano por excelencia', imagePath: 'http://www.aspic.edu.mx/wp-content/uploads/2013/09/chile-en-nogada.jpg'};
   }
 
 }
