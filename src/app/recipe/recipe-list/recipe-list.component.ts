@@ -8,6 +8,8 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   @Output() item = new EventEmitter<Recipe>();
   value = 'Nothing';
+
+  //Default recipes to show
   recipes: Recipe[] = [
     new Recipe('Chiles en nogada',
     'platillo poblano por excelencia',
@@ -26,6 +28,7 @@ export class RecipeListComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   itemDetails(Object: Recipe){
     this.item.emit(Object);
     //console.log(Object);

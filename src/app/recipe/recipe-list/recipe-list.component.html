@@ -6,6 +6,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
+    <!-- This ngFor shows all the items available to get the recipe -->
     <app-recipe-item (item)="itemDetails($event)"  *ngFor="let recipe of recipes" [rec]="recipe" > </app-recipe-item>
   </div>
 </div>

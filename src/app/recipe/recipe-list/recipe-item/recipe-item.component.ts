@@ -12,7 +12,10 @@ export class RecipeItemComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  //Handles the recipeCslicked event and emit the selected recipe to the recipe component
   recipeItemClicked(){
+
     this.item.emit(this.recipe);
     //console.log(this.recipe);
   }
